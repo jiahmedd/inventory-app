@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/inventory_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jewelry Inventory"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <ListView
+        android:id="@+id/inventory_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <Button
+        android:id="@+id/add_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Item"
+        android:padding="12dp"
+        android:onClick="goToAddItemActivity" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Main"
+        android:padding="12dp"
+        android:onClick="goBack" />
+
+
+
+</LinearLayout>

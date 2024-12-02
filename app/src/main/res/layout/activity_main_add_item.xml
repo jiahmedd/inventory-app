@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/item_name_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Item Name" />
+
+    <EditText
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Item Description" />
+
+    <EditText
+        android:id="@+id/item_cost"
+        android:layout_width="match_parent"
+
+        android:layout_height="48dp"
+        android:hint="Item Cost"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/item_stock"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Item Stock"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/add_item_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Item" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:visibility="gone" />
+
+</LinearLayout>
